@@ -6,36 +6,40 @@
 }
 
 /* Corps principal */
-body {
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     background: #f9f9f9;
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 /* Conteneur principal */
-.conteneur {
+.container {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Contenu principal */
-.contenu {
-    flex: 1;
-    padding: 20px;
+    position: relative;
+    min-height: calc(100vh - 60px); /* Ajuster selon la hauteur du footer */
+    width: 100%;
+    background-color: #333;
+    background-image: url("img.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+    padding: 0 8%;
 }
 
 /* Footer styling */
 footer {
     background: #333; /* Couleur sombre pour le footer */
     color: #f1f1f1; /* Texte clair */
-    padding: 40px 0 20px;
+    padding: 40px 20px 20px; /* Uniformiser le padding */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px; /* Espacement entre les sections */
+    margin-top: 0;
 }
 
 .contenu-footer {
@@ -43,26 +47,19 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 150px;
     width: 100%;
-    padding: 0 20px;
 }
 
 /* Bloc "Nos services" */
 .footer-services {
     flex: 1;
-    background: #444;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .footer-services h3 {
     font-size: 24px;
     color: #ff6600;
     margin-bottom: 15px;
-    border-bottom: 2px solid #ff6600;
-    padding-bottom: 5px;
 }
 
 .footer-services ul {
@@ -87,18 +84,12 @@ footer {
 /* Bloc "Nous contacter" */
 .footer-contact {
     flex: 1;
-    background: #555;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .footer-contact h3 {
     font-size: 24px;
     color: #4caf50;
     margin-bottom: 15px;
-    border-bottom: 2px solid #4caf50;
-    padding-bottom: 5px;
 }
 
 .footer-contact p {
@@ -109,18 +100,12 @@ footer {
 /* Bloc "Nos horaires" */
 .footer-horaires {
     flex: 1;
-    background: #222;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .footer-horaires h3 {
     font-size: 24px;
     color: #007bff;
     margin-bottom: 15px;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
 }
 
 .footer-horaires p {
